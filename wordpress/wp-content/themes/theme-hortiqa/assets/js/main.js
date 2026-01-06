@@ -88,27 +88,26 @@ document.addEventListener("DOMContentLoaded", () => {
   burgerMenuTable();
 
   const burgerMobMenu = () => {
-    // Первый уровень
+
     const itemMenu = document.querySelectorAll(".menu__item-one");
 
     itemMenu.forEach((item) => {
       item.addEventListener("click", (e) => {
-        e.preventDefault(); // отменяем переход по ссылке первого уровня
+        e.preventDefault();
         item.classList.toggle("active");
-        // Скрываем актив у всех остальных первого уровня
+
         itemMenu.forEach((otherItem) => {
           if (otherItem !== item) {
             otherItem.classList.remove("open");
-              otherItem.classList.remove("active");
+            otherItem.classList.remove("active");
             const childLvl2 = otherItem.querySelector(".catalog__category-two");
             if (childLvl2) childLvl2.classList.remove("open");
           }
         });
 
-        // Переключаем актив у текущего первого уровня
+
         item.classList.toggle("open");
 
-        // Переключаем актив второго уровня только если он есть
         const childLvl2 = item.querySelector(".catalog__category-two");
         if (childLvl2) {
           childLvl2.classList.toggle("open");
@@ -116,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    // Второй уровень (открытие третьего)
+
     const lvl2Items = document.querySelectorAll(".catalog__category-two");
 
     lvl2Items.forEach((lvl2) => {
@@ -136,4 +135,92 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   burgerMobMenu();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* swiper */
+
+  const heroSwiper = new Swiper('.hero__swiper', {
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.hero__swiper .swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.hero__swiper .swiper-button-next',
+      prevEl: '.hero__swiper .swiper-button-prev',
+    },
+
+  });
+
+
+
+  const partnersSwiper = new Swiper('.partners__swiper', {
+    loop: true,
+    slidesPerView: '8.7',
+    spaceBetween: 60,
+    /* 
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+     */
+    pagination: {
+      el: '.partners__swiper .swiper-pagination',
+      clickable: true,
+    },
+
+
+
+
+    breakpoints: {
+      0: {
+        slidesPerView: 4.7,
+        spaceBetween: 10,
+      },
+
+      500: {
+        slidesPerView: 4.9,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4.5,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 5.7,
+        spaceBetween: 60,
+      },
+      1800: {
+        slidesPerView: 7.7,
+        spaceBetween: 60,
+      }
+    },
+  });
+
+
+
+
+
+
+
+
+
+
 });

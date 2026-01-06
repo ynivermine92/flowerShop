@@ -21,11 +21,22 @@ function project_scripts()
 
 	wp_enqueue_style(
 		'main-style',
-		get_template_directory_uri() . '/assets/css/main.css',
+		get_template_directory_uri() . '/assets/css/style.css',
 		array(),
 		'1.0',
 		'all'
 	);
+
+
+	wp_enqueue_script(
+		'swiper',
+		get_template_directory_uri() . '/assets/js//libs/swiper.js',
+		array('jquery'),
+		'1.0',
+		true
+	);
+
+
 
 	wp_enqueue_script(
 		'main-script',

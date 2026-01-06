@@ -3,8 +3,8 @@ get_header();
 ?>
 
 <main>
-    <section class="home">wqrwrqrwqwrqwqrwrq</section>
-
+    <?php get_template_part('section/hero'); ?>
+    <?php get_template_part('section/partners'); ?>
 </main>
 
 <?php

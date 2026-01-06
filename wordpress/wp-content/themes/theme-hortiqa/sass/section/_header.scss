@@ -2,6 +2,7 @@
 
 .header {
   background: #fff;
+
   &.fixed {
     position: fixed;
     left: 0;
@@ -74,6 +75,7 @@
         transition: all 0.5s;
       }
     }
+
     svg {
       width: 26px;
       height: 26px;
@@ -103,9 +105,11 @@
     max-width: 156px;
     width: 100%;
     gap: 5px;
+
     span {
       transition: all 0.5s;
     }
+
     transition: all 0.5s;
     font-size: 13px;
 
@@ -116,11 +120,13 @@
       height: 20px;
       fill: transparent;
     }
+
     &:hover {
       .header__tell-icon {
         stroke: var(--gren);
         transition: all 0.5s;
       }
+
       span {
         color: var(--gren);
         transition: all 0.5s;
@@ -133,10 +139,12 @@
     align-items: center;
     gap: 30px;
   }
+
   &__content {
     display: flex;
     gap: 0px 10px;
   }
+
   /* nav */
   .nav__menu {
     .menu {
@@ -147,6 +155,7 @@
     .menu__item-content {
       font-size: 16px;
       transition: all 0.5s;
+
       &:hover {
         color: var(--gren);
         transition: all 0.5s;
@@ -173,6 +182,7 @@
     transition: all 0.5s;
   }
 }
+
 /* menu catalog */
 
 .catalog {
@@ -195,6 +205,7 @@
     display: block;
     opacity: 1;
   }
+
   &__title {
     padding: 25px 0 20px 0;
     font-size: 22px;
@@ -214,6 +225,7 @@
       left: -12px;
     }
   }
+
   &__wrapper {
     display: flex;
   }
@@ -223,8 +235,9 @@
     position: relative;
     height: auto;
   }
+
   .catalog__wrapper {
-    .catalog__category + .catalog__category {
+    .catalog__category+.catalog__category {
       margin-left: 20px;
       padding-left: 20px;
       display: block;
@@ -234,6 +247,7 @@
 
   .catalog__category {
     transition: all 0.5s;
+
     a {
       &:hover {
         color: var(--gren);
@@ -246,12 +260,15 @@
         }
       }
     }
+
     height: 100%;
   }
+
   .catalog__category-one {
-   /*  width: 100%;
+
+    /*  width: 100%;
     max-width: 200px; */
-   /*  .menu__item{
+    /*  .menu__item{
       flex-wrap: nowrap;
       max-width: 200px;
     } */
@@ -272,17 +289,18 @@
   .menu__item {
     min-width: 200px;
     line-height: 1.5em;
+
     /* position: relative; */
     // Для 2 и 3 уровней
-    &:hover > .catalog__category-two,
-    &:hover > .catalog__category-three {
+    &:hover>.catalog__category-two,
+    &:hover>.catalog__category-three {
       display: block;
       opacity: 1;
       transform: translateX(0);
     }
   }
 
-  .menu__item.active > .menu__item-link .menu__arrow {
+  .menu__item.active>.menu__item-link .menu__arrow {
     opacity: 1;
     visibility: visible;
   }
@@ -303,6 +321,7 @@
     border-top: none;
     width: max-content;
     border-left: 1px solid var(--gren);
+
     .menu__item {
       display: flex;
       padding: 3px 20px 3px 20px;
@@ -312,19 +331,7 @@
   .menu__item-name {
     line-height: 1.2em;
   }
-  .menu__item-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px 30px;
-    font-size: 16px;
-    flex-wrap: wrap;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    img {
-      width: 60px;
-    }
-  }
+
 
   .menu__arrow {
     width: 8px;
@@ -338,18 +345,30 @@
 
   /*   color link */
 
-  .menu.catalog__category-one > .menu__item > .menu__item-link:hover {
+  .menu.catalog__category-one>.menu__item>.menu__item-link:hover {
     color: var(--gren);
     text-decoration: none;
   }
 
-  .menu.catalog__category-one
-    > .menu__item
-    > .menu__item-link:hover
-    .menu__arrow {
+  .menu.catalog__category-one>.menu__item>.menu__item-link:hover .menu__arrow {
     transition: all 0.5s;
     border-right: 2px solid var(--gren);
     border-bottom: 2px solid var(--gren);
+  }
+}
+
+.menu__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 30px;
+  font-size: 14px;
+  flex-wrap: wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+  img {
+    width: 60px;
   }
 }
 
@@ -365,6 +384,7 @@
   align-items: center;
   @extend %g-500;
   transition: all 0.5s;
+
   &:hover {
     background: var(--gren);
     color: var(--white);
@@ -382,10 +402,12 @@
       background: var(--white);
     }
   }
+
   &.active {
     background: var(--gren);
     color: var(--white);
     transition: all 0.5s;
+
     span {
       display: none;
     }
@@ -454,8 +476,8 @@
   opacity: 0;
   transform: translateY(-20px);
   pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s; 
-  visibility: hidden; 
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+  visibility: hidden;
   display: none;
 
   &.active {
@@ -463,7 +485,7 @@
     transform: translateY(0);
     pointer-events: auto;
     visibility: visible;
-    transition-delay: 0s; 
+    transition-delay: 0s;
     display: block;
   }
 
@@ -576,7 +598,7 @@
       display: none;
     }
 
-    &__box + &__box {
+    &__box+&__box {
       margin-left: 0;
     }
 
@@ -612,6 +634,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
       img {
         width: 100%;
       }
@@ -641,6 +664,7 @@
       font-size: 14px;
       color: var(--body);
       transition: all 0.5s;
+
       &:hover {
         color: var(--gren);
         transition: all 0.5s;
@@ -653,6 +677,7 @@
     background: transparent;
     border: 2px solid #f2f2f2;
     margin: 1.5px 0;
+
     span {
       background: var(--body);
     }
@@ -669,10 +694,12 @@
   .burger-mobile__close {
     padding: 5px;
     transition: all 0.5s;
+
     &.active {
       transition: all 0.5s;
     }
   }
+
   #close {
     cursor: pointer;
     stroke: var(--body);
@@ -686,9 +713,11 @@
       transition: all 0.5s;
     }
   }
+
   .burger__mobile-btn {
     padding: 0px 8px;
   }
+
   .burger-mobile {
     &__items-catalog {
       .burger-mobile__content {
@@ -696,11 +725,13 @@
           stroke: var(--body);
           transition: all 0.5s;
         }
+
         &:hover {
           a {
             color: var(--gren);
             transition: all 0.5s;
           }
+
           #Vector {
             stroke: var(--gren);
             transition: all 0.5s;
@@ -708,6 +739,7 @@
         }
       }
     }
+
     &__box {
       padding: 20px 15px;
       display: flex;
@@ -719,17 +751,20 @@
         position: unset;
         transform: unset;
         margin: 0;
+
         img {
           max-width: 100%;
           height: auto;
         }
       }
     }
+
     &__nav {
       a {
         font-size: 12px;
       }
     }
+
     &__title {
       font-size: 22px;
       color: #040810;
@@ -770,6 +805,7 @@
       padding-right: 12px;
       border-right: none;
       transition: all 0.5s;
+
       &:hover {
         a {
           color: var(--gren);
@@ -791,20 +827,24 @@
       &.active {
         transform: rotate(180deg);
         transition: all 0.5s;
+
         #Vector {
           stroke: var(--gren);
           transition: all 0.5s;
         }
       }
+
       transition: all 0.5s;
       width: 12px;
       height: 12px;
     }
+
     &__link {
       &.active {
         color: var(--gren);
         transition: all 0.5s;
       }
+
       color: black;
       font-size: 17px;
     }
@@ -817,6 +857,7 @@
         opacity: 1;
         animation: showNav 0.6s ease forwards;
       }
+
       position: absolute;
       z-index: -1;
       opacity: 0;
@@ -854,6 +895,7 @@
           transform: rotate(316deg);
         }
       }
+
       height: 100%;
     }
 
@@ -874,8 +916,10 @@
           display: block;
         }
       }
+
       &.active {
         transition: all 0.5s;
+
         .menu__arrow {
           transition: all 0.5s;
           border-right: 2px solid var(--body);
@@ -899,6 +943,7 @@
           }
         }
       }
+
       a {
         border: 1px solid var(--lightgreen);
         padding: 10px 0;
@@ -925,8 +970,10 @@
           }
         }
       }
+
       &.active {
         transition: all 0.5s;
+
         .menu__arrow {
           transition: all 0.5s;
           border-right: 2px solid var(--body);
@@ -1010,11 +1057,14 @@
           }
         }
       }
+
       .menu__item-three {
         padding: 5px 10px 5px 10px;
+
         a {
           transition: all 0.5s;
           padding: 0;
+
           &:hover {
             color: var(--gren);
             transition: all 0.5s;
@@ -1051,11 +1101,13 @@
         overflow-wrap: break-word;
       }
     }
+
     .catalog__category-three li {
       .menu__item-three {
         padding: 10px !important;
       }
     }
+
     .menu__item-one-name {
       font-size: 14px;
     }
@@ -1068,16 +1120,19 @@
       position: unset;
       transform: unset;
       margin: 0;
+
       img {
         max-width: 100%;
         height: auto;
       }
     }
+
     &__detals {
       gap: 5px;
       align-items: center;
     }
   }
+
   .burger {
     margin-right: 5px;
   }

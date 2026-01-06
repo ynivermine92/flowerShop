@@ -1,0 +1,40 @@
+.btn {
+    border-radius: 38px;
+    background: var(--lightgreen);
+    display: flex;
+    padding: 16px 22px;
+    cursor: pointer;
+    color: var(--body);
+    align-items: center;
+    transition: all 0.5s;
+
+    &:hover {
+        background: var(--gren);
+        color: var(--white);
+        transition: all 0.5s;
+    }
+
+}
+
+
+
+.btn-lightgreen {
+    background: var(--gren);
+    color: var(--white);
+
+    &:hover {
+        background: var(--lightgreen);
+        color: var(--body);
+    }
+}
+
+.btn-orange {
+    background: var(--orange);
+    color: var(--white);
+    opacity: 1;
+
+    &:hover {
+        background: var(--gren);
+        opacity: 0.7;
+    }
+}

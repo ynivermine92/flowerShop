@@ -42,129 +42,120 @@
 
 
 			<div class="footer__wrapper">
-				
-
-					<div class="footer__detals-box">
-						<h4 class="footer__page">Shop</h4>
-
-						<ul class="footer__items">
-							<?php
-							$categories = get_terms([
-								'taxonomy'   => 'product_cat',
-								'hide_empty' => false,
-								'parent'     => 0,
-							]);
 
 
-							foreach ($categories as $category) { ?>
-								<li class="footer__item">
-									<a class="footer__link"
-										href="<?php echo esc_url(get_term_link($category)); ?>">
-										<?php echo esc_html($category->name); ?>
-									</a>
-								</li>
-							<?php
-							} ?>
+				<div class="footer__detals-box">
+					<h4 class="footer__page">Shop</h4>
+
+					<ul class="footer__items">
+						<?php
+						$categories = get_terms([
+							'taxonomy'   => 'product_cat',
+							'hide_empty' => false,
+							'parent'     => 0,
+						]);
 
 
-						</ul>
-					</div>
-
-
-
-					<div class="footer__detals-box">
-						<h4 class="footer__page">Services</h4>
-						<ul class="footer__items">
+						foreach ($categories as $category) { ?>
 							<li class="footer__item">
-								<a class="footer__link" href="#">Rental</a>
-
+								<a class="footer__link"
+									href="<?php echo esc_url(get_term_link($category)); ?>">
+									<?php echo esc_html($category->name); ?>
+								</a>
 							</li>
-							<li class="footer__item">
-								<a class="footer__link" href="#">Landscaping</a>
-
-							</li>
-							<li class="footer__item">
-								<a class="footer__link" href="#">Corporate</a>
-
-							</li>
+						<?php
+						} ?>
 
 
-						</ul>
-					</div>
-
-
-					<div class="footer__detals-box">
-						<h4 class="footer__page">Inspiration</h4>
-						<ul class="footer__items">
-							<li class="footer__item">
-								<a class="footer__link" href="#">Blog</a>
-							</li>
-							<li class="footer__item">
-								<a class="footer__link" href="#">Video Guides</a>
-							</li>
-							<li class="footer__item">
-								<a class="footer__link" href="#">Plant Finder</a>
-							</li>
+					</ul>
+				</div>
 
 
 
+				<div class="footer__detals-box">
+					<h4 class="footer__page">Services</h4>
+					<ul class="footer__items">
+						<li class="footer__item">
+							<a class="footer__link" href="#">Rental</a>
+
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Landscaping</a>
+
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Corporate</a>
+
+						</li>
 
 
-						</ul>
-					</div>
+					</ul>
+				</div>
 
 
-					<div class="footer__detals-box">
-						<h4 class="footer__page">Support</h4>
-						<ul class="footer__items">
-							<li class="footer__item">
-								<a class="footer__link" href="#">My account</a>
-							</li>
-							<li class="footer__item">
-								<a class="footer__link" href="#">FAQ</a>
-							</li>
-							<li class="footer__item">
-								<a class="footer__link" href="#">Contact</a>
-							</li>
-							<li class="footer__item">
-								<a class="footer__link" href="#">Shipping & Returns</a>
-							</li>
-							<li class="footer__item">
-								<a class="footer__link" href="#">Loyalty</a>
-							</li>
-						</ul>
-					</div>
-
-
-
-
-					<div class="footer__detals-box footer__social">
-						<h4 class="footer__page">Social</h4>
-
-						<ul class="footer__social-items">
-							<li class="footer__social-item"><a class="footer__social-link" href="#"> <?= file_get_contents(get_template_directory() . '/assets/img/svg/telephone.svg');	?></a></li>
-							<li class="footer__social-item"><a class="footer__social-link" href="#"> <?= file_get_contents(get_template_directory() . '/assets/img/svg/telegram.svg');	?></a></li>
-							<li class="footer__social-item"><a class="footer__social-link" href="#"> <?= file_get_contents(get_template_directory() . '/assets/img/svg/instagram.svg');	?></a></li>
+				<div class="footer__detals-box">
+					<h4 class="footer__page">Inspiration</h4>
+					<ul class="footer__items">
+						<li class="footer__item">
+							<a class="footer__link" href="#">Blog</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Video Guides</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Plant Finder</a>
+						</li>
 
 
 
 
 
-						</ul>
-					</div>
+					</ul>
+				</div>
+
+
+				<div class="footer__detals-box">
+					<h4 class="footer__page">Support</h4>
+					<ul class="footer__items">
+
+						<a class="footer__link" href="#">FAQ</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Contact</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Shipping & Returns</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Loyalty</a>
+						</li>
+					</ul>
+				</div>
+
+
+
+
+				<div class="footer__detals-box footer__social">
+					<h4 class="footer__page">Social</h4>
+
+					<ul class="footer__social-items">
+						<li class="footer__social-item"><a class="footer__social-link" href="#"> <?= file_get_contents(get_template_directory() . '/assets/img/svg/telephone.svg');	?></a></li>
+						<li class="footer__social-item"><a class="footer__social-link" href="#"> <?= file_get_contents(get_template_directory() . '/assets/img/svg/telegram.svg');	?></a></li>
+						<li class="footer__social-item"><a class="footer__social-link" href="#"> <?= file_get_contents(get_template_directory() . '/assets/img/svg/instagram.svg');	?></a></li>
+
+
+
+
+
+					</ul>
+				</div>
 
 
 
 			</div>
 		</div>
 
-		<div class="row footer__bootom">
-			<div class="col-4">
 
-			</div>
-
-			<div class="col-4"></div>
-		</div>
 
 
 

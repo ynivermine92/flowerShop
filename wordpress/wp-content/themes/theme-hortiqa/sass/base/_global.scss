@@ -17,25 +17,30 @@
 
   @media (max-width: $breakpoint768) {
     max-width: 740px;
+    padding: 0 15px;
   }
 
   @media (max-width: $breakpoint480) {
     max-width: none;
   }
 }
-.wrapper {
-  padding: 0 15px;
-}
+
+
+
 html {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%;
+  /* 1rem = 10px */
 }
 
 body {
+  
   @extend %g-500;
   color: var(--body);
+
   &.locked {
     overflow: hidden;
   }
+
   // Dark mode styles
   &.dark {
     background: #242424;
@@ -52,19 +57,32 @@ body {
     opacity: 1;
   }
 }
+
 h1 {
-  font-size: 4rem;
+  font-size: 5.6rem;
+  font-size: clamp(4rem, 3vw, 5.6rem);
   @extend %g-700;
+  line-height: 1.05em;
 }
+
+.title {
+  font-size: clamp(3.2rem, 3vw, 4.2rem);
+  @extend %g-700;
+  line-height: 1.05em;
+}
+
 a {
   color: var(--body);
 }
 
-p {
+p,
+span {
   color: var(--body);
   font-size: 1.4rem;
   line-height: 1.4em;
 }
+
+
 
 .text {
   color: var(--body);
@@ -75,6 +93,7 @@ p {
 .ml-0 {
   margin-left: 0 !important;
 }
+
 .mr-0 {
   margin-right: 0 !important;
 }

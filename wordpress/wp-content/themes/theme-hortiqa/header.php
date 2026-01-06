@@ -326,7 +326,7 @@
 
 
 
-			<ul class="menu catalog__category catalog__category-one">
+						<ul class="menu catalog__category catalog__category-one">
 
 							<?php
 							$categories = get_terms([
@@ -484,7 +484,7 @@
 					</div>
 				</div>
 
-			
+
 			</div>
 		</div>
 	</header>
