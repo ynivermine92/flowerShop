@@ -1,6 +1,6 @@
 // Container & Breakpoints
 @use "sass:math";
-$containerWidth: 1400;
+$containerWidth: 1300;
 $containerPadding: 60;
 $containerSidePadding: math.div($containerPadding, 2);
 $breakpoint1450: 1449.98 + px;
@@ -18,17 +18,17 @@ $fontMain: sans-serif;
 $fontSecondary: "";
 
 %g-300 {
- font-family: "Gotham";
+  font-family: "Gotham";
   font-weight: 300;
 }
 
 %g-500 {
- font-family: "Gotham";
+  font-family: "Gotham";
   font-weight: 500;
 }
 
 %g-700 {
- font-family: "Gotham";
+  font-family: "Gotham";
   font-weight: 700;
 }
 
@@ -55,4 +55,23 @@ $fontSecondary: "";
 %p-400 {
   font-family: "Poppins";
   font-weight: 400;
+}
+
+%animation {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s ease;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:
+      0 18px 40px rgba(0, 0, 0, 0.15),
+      0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s;
+
+
+  }
 }

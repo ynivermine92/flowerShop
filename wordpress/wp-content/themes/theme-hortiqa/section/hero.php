@@ -6,6 +6,7 @@
                 <p class="hero__text text">Discover plants, garden tools, and decor with fast delivery and expert guidance. Shop with confidence and bring your green space to life, wherever you are.</p>
                 <ul class="hero__items">
                     <li class="hero__item">
+
                         <?php
                         echo file_get_contents(
                             get_template_directory() . '/assets/img/svg/cheeck.svg'
@@ -29,6 +30,7 @@
                             get_template_directory() . '/assets/img/svg/truck.svg'
                         );
                         ?>
+
                         <span class="hero__icon-text text">24–48h Delivery</span>
                     </li>
                 </ul>
@@ -43,11 +45,11 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3-300x300.png" alt="GFG image" />
+                        <div class="swiper-slide"><img src="https://picsum.photos/1920/1080" alt="GFG image" />
                         </div>
-                        <div class="swiper-slide"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3-300x300.png" alt="GFG image" />
+                        <div class="swiper-slide"><img src="https://picsum.photos/1920/1080" alt="GFG image" />
                         </div>
-                        <div class="swiper-slide"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3-300x300.png" alt="GFG image" />
+                        <div class="swiper-slide"><img src="https://picsum.photos/1920/1080" alt="GFG image" />
                         </div>
                     </div>
                     <!-- If we need pagination -->

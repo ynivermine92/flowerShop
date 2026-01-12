@@ -14,12 +14,20 @@
 @use "./base/root";
 @use "./base/fonts";
 @use "./base/button";
+@use "./base/rating";
 //components
 
 // section
 @use "./section/header";
 @use "./section/hero";
 @use "./section/partners";
+@use "./section/garden";
+@use "./section/collection";
+@use "./section/services";
+@use "./section/education";
+@use "./section/testimonials";
+@use "./section/advertising";
+
 
 
 

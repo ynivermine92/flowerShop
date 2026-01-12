@@ -172,6 +172,3 @@
 
 </html>
 
-
-<!-- 	col-xl-4 col-12 
- col-xl-8 col-12 -->
