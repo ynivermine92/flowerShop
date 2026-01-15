@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   const languageTab = () => {
     const languagesItem = document.querySelectorAll(".languages__link");
     languagesItem.forEach((item) => {
@@ -187,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
       el: '.partners__swiper .swiper-pagination',
       clickable: true,
     },
-
+    speed: 800,
 
 
 
@@ -270,21 +271,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const advertisingSwiper = new Swiper('.advertising__slider', {
     loop: true,
-    slidesPerView: '4.5',
+    slidesPerView: 4.5,
     spaceBetween: 24,
+    allowTouchMove: true,
 
-
-
-
-
-
+    speed: 6000, // чем больше — тем медленнее движение
+    autoplay: {
+      delay: 0, // ❗ без пауз
+      disableOnInteraction: false,
+      pauseOnMouseEnter: false,
+    },
 
     breakpoints: {
       0: {
         slidesPerView: 1.2,
         spaceBetween: 10,
       },
-
       375: {
         slidesPerView: 1.2,
         spaceBetween: 10,
@@ -297,16 +299,14 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 2,
         spaceBetween: 10,
       },
-
       1450: {
-        slidesPerView: 3,
-        spaceBetween: 15,
+        slidesPerView: 4.5,
+        spaceBetween: 24,
       }
-    }, 
-
+    },
   });
 
-  
+
 
   const updateLastVisible = () => {
     const visibleSlides = document.querySelectorAll('.partners__swiper .swiper-slide-visible');

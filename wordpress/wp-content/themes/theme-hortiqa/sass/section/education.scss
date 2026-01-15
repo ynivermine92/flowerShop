@@ -23,7 +23,13 @@
         display: flex;
         flex-direction: column;
         padding: 40px 0;
+        transition: all 0.5s;
     }
+
+    .education__inner:has(.education__content-btn:hover) {
+        @extend %animation;
+    }
+
 
     .icon-arrow {
         width: 12px;
@@ -35,6 +41,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 0 5px;
     }
 
     &__data {
@@ -69,25 +76,30 @@
         stroke: var(--gren);
     }
 
-    &__content-link {
+    &__content-btn {
         width: 114px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        opacity: 1;
+        background: transparent;
         transition: all 0.5s;
+        &:hover{
+            span{
 
-        &:hover {
-            opacity: 0.4;
-            transition: all 0.5s;
+                color: var(--gren);
+            }
         }
+
+
     }
-    @media(max-width:575.99px){
-        &__wrapper{
+
+    @media(max-width:575.99px) {
+        &__wrapper {
             flex-direction: column;
             gap: 40px 0;
         }
-        .title{
+
+        .title {
             text-align: center;
         }
     }

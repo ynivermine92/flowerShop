@@ -47,12 +47,22 @@
         display: none;
     }
 
+    .swiper-wraper__content {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+
+    }
+
     .swiper-content {
         padding: 24px;
         box-sizing: border-box;
         border: 2px solid rgba(244, 244, 244, 1);
         border-radius: 24px;
         background: rgba(255, 255, 255, 1);
+
     }
 
     .swiper-slide {

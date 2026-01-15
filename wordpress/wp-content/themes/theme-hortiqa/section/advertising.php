@@ -86,6 +86,214 @@
 
                 </div>
             </div>
+            <div class="swiper-slide">
+                <div class="advertising__inner">
+                    <div class="advertising__wrapper">
+                        <div class="advertising__logo">
+                            <img src="<?= esc_url(get_template_directory_uri() . '/assets/img/png/cart-log.png'); ?>" alt="">
+
+                        </div>
+                        <span>...</span>
+                    </div>
+                    <div class="advertising__image">
+                        <img src="https://picsum.photos/1920/1080" alt="advertising__img">
+
+                    </div>
+
+                    <div class="advertising__wrapper-box">
+                        <div class="advertising__conntent">
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+
+                        </div>
+                        <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="advertising__inner">
+                    <div class="advertising__wrapper">
+                        <div class="advertising__logo">
+                            <img src="<?= esc_url(get_template_directory_uri() . '/assets/img/png/cart-log.png'); ?>" alt="">
+
+                        </div>
+                        <span>...</span>
+                    </div>
+                    <div class="advertising__image">
+                        <img src="https://picsum.photos/1920/1080" alt="advertising__img">
+
+                    </div>
+
+                    <div class="advertising__wrapper-box">
+                        <div class="advertising__conntent">
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+
+                        </div>
+                        <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="advertising__inner">
+                    <div class="advertising__wrapper">
+                        <div class="advertising__logo">
+                            <img src="<?= esc_url(get_template_directory_uri() . '/assets/img/png/cart-log.png'); ?>" alt="">
+
+                        </div>
+                        <span>...</span>
+                    </div>
+                    <div class="advertising__image">
+                        <img src="https://picsum.photos/1920/1080" alt="advertising__img">
+
+                    </div>
+
+                    <div class="advertising__wrapper-box">
+                        <div class="advertising__conntent">
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+
+                        </div>
+                        <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="advertising__inner">
+                    <div class="advertising__wrapper">
+                        <div class="advertising__logo">
+                            <img src="<?= esc_url(get_template_directory_uri() . '/assets/img/png/cart-log.png'); ?>" alt="">
+
+                        </div>
+                        <span>...</span>
+                    </div>
+                    <div class="advertising__image">
+                        <img src="https://picsum.photos/1920/1080" alt="advertising__img">
+
+                    </div>
+
+                    <div class="advertising__wrapper-box">
+                        <div class="advertising__conntent">
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+
+                        </div>
+                        <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+                  <div class="swiper-slide">
+                <div class="advertising__inner">
+                    <div class="advertising__wrapper">
+                        <div class="advertising__logo">
+                            <img src="<?= esc_url(get_template_directory_uri() . '/assets/img/png/cart-log.png'); ?>" alt="">
+
+                        </div>
+                        <span>...</span>
+                    </div>
+                    <div class="advertising__image">
+                        <img src="https://picsum.photos/1920/1080" alt="advertising__img">
+
+                    </div>
+
+                    <div class="advertising__wrapper-box">
+                        <div class="advertising__conntent">
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+
+                        </div>
+                        <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+                  <div class="swiper-slide">
+                <div class="advertising__inner">
+                    <div class="advertising__wrapper">
+                        <div class="advertising__logo">
+                            <img src="<?= esc_url(get_template_directory_uri() . '/assets/img/png/cart-log.png'); ?>" alt="">
+
+                        </div>
+                        <span>...</span>
+                    </div>
+                    <div class="advertising__image">
+                        <img src="https://picsum.photos/1920/1080" alt="advertising__img">
+
+                    </div>
+
+                    <div class="advertising__wrapper-box">
+                        <div class="advertising__conntent">
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+
+                        </div>
+                        <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+                  <div class="swiper-slide">
+                <div class="advertising__inner">
+                    <div class="advertising__wrapper">
+                        <div class="advertising__logo">
+                            <img src="<?= esc_url(get_template_directory_uri() . '/assets/img/png/cart-log.png'); ?>" alt="">
+
+                        </div>
+                        <span>...</span>
+                    </div>
+                    <div class="advertising__image">
+                        <img src="https://picsum.photos/1920/1080" alt="advertising__img">
+
+                    </div>
+
+                    <div class="advertising__wrapper-box">
+                        <div class="advertising__conntent">
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+
+                        </div>
+                        <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+                  <div class="swiper-slide">
+                <div class="advertising__inner">
+                    <div class="advertising__wrapper">
+                        <div class="advertising__logo">
+                            <img src="<?= esc_url(get_template_directory_uri() . '/assets/img/png/cart-log.png'); ?>" alt="">
+
+                        </div>
+                        <span>...</span>
+                    </div>
+                    <div class="advertising__image">
+                        <img src="https://picsum.photos/1920/1080" alt="advertising__img">
+
+                    </div>
+
+                    <div class="advertising__wrapper-box">
+                        <div class="advertising__conntent">
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                            <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+
+                        </div>
+                        <div class="advertising__box"><img src="https://picsum.photos/1920/1080" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
         <div class="advertising__social">

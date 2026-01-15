@@ -1,5 +1,5 @@
 @use "../base/vars" as *;
-  
+
 
 .collection {
     &__wrapper {
@@ -43,14 +43,19 @@
     &__inner {
         padding-top: 15px;
     }
-  
+
     &__link {
         display: block;
         position: relative;
-        .arrow-btn{
+        @extend %animation;
+        border-radius: 20px;
+
+        .arrow-btn {
             transform: rotate(0deg);
         }
+
         &:hover {
+            border-radius: 20px;
 
             .collection__name {
                 color: var(--black);
@@ -72,8 +77,8 @@
 
     &__image {
         max-width: 100%;
-            min-height: 270px;
-            object-fit: cover;
+        min-height: 270px;
+        object-fit: cover;
         border-radius: 24px;
     }
 

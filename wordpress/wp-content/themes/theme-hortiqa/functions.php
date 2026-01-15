@@ -20,7 +20,7 @@ function project_scripts()
 {
 
 	wp_enqueue_style(
-		'main-style',
+		'style',
 		get_template_directory_uri() . '/assets/css/style.css',
 		array(),
 		'1.0',
@@ -39,7 +39,7 @@ function project_scripts()
 
 
 	wp_enqueue_script(
-		'main-script',
+		'script',
 		get_template_directory_uri() . '/assets/js/main.js',
 		array('jquery'),
 		'1.0',
@@ -47,3 +47,28 @@ function project_scripts()
 	);
 }
 add_action('wp_enqueue_scripts', 'project_scripts');
+
+
+
+
+function allow_svg_upload($mimes)
+{
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'allow_svg_upload');
+
+
+function fix_svg($file, $filename, $mimes)
+{
+	$ext = pathinfo($filename, PATHINFO_EXTENSION);
+	if ($ext === 'svg') {
+		$file['type'] = 'image/svg+xml';
+	}
+	return $file;
+}
+add_filter('wp_check_filetype_and_ext', 'fix_svg', 10, 3);
+
+
+
+

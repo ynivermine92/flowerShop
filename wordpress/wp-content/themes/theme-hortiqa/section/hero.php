@@ -1,7 +1,16 @@
+<?php
+echo '<pre>';
+print_r(get_fields($post_id)); 
+echo '</pre>';
+
+
+
+?>
+
 <section class="hero">
     <div class="wrapper">
         <div class="hero__inner row">
-            <div class="hero__wrapper col-lg-4 col-12">
+            <div class="hero__wrapper col-lg-5 col-12">
                 <h1 class="hero__title">Croatia’s Largest Garden Center – Now Online</h1>
                 <p class="hero__text text">Discover plants, garden tools, and decor with fast delivery and expert guidance. Shop with confidence and bring your green space to life, wherever you are.</p>
                 <ul class="hero__items">
