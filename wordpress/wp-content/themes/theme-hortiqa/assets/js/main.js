@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const partnersSwiper = new Swiper('.partners__swiper', {
     loop: true,
-    slidesPerView: '8.7',
+    slidesPerView: '6.7',
     spaceBetween: 60,
     watchSlidesProgress: true,
     watchSlidesVisibility: true,
@@ -210,8 +210,8 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 5.7,
         spaceBetween: 60,
       },
-      1800: {
-        slidesPerView: 7.7,
+      1600: {
+        slidesPerView: 6.7,
         spaceBetween: 60,
       }
     },
@@ -275,9 +275,9 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 24,
     allowTouchMove: true,
 
-    speed: 6000, // чем больше — тем медленнее движение
+    speed: 6000, 
     autoplay: {
-      delay: 0, // ❗ без пауз
+      delay: 0, 
       disableOnInteraction: false,
       pauseOnMouseEnter: false,
     },

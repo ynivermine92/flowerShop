@@ -1,3 +1,20 @@
+<?php
+$services = get_fields($post_id);
+$services_data = $services['services'];
+
+
+echo ' <pre>';
+print_r($services_data);
+echo '</pre>';
+
+
+
+
+
+?>
+
+
+
 <section class="services">
     <div class="wrapper">
         <div class="row">
@@ -82,5 +99,8 @@
 
         </div>
 
-    </div>
+        <div class="row services__wrapper-box">
+            <div class="col-12"> <a class="services__btn btn-green" href="#">See more services</a> </div>
+
+        </div>
 </section>

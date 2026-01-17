@@ -88,11 +88,13 @@
 
 
 .swiper-pagination {
+  display: flex;
   position: absolute;
   text-align: center;
   bottom: 10px;
   width: 100%;
   z-index: 10;
+  padding: 0 40px;
 }
 
 

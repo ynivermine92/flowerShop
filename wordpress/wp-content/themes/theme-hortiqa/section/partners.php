@@ -1,3 +1,21 @@
+<?php
+$partners = get_fields($post_id);
+$partners_data = $partners['partners'];
+
+
+/* echo ' <pre>';
+print_r($partners_data);
+echo '</pre>'; */
+
+
+
+
+
+?>
+
+
+
+
 <section class="partners">
     <div class="wrapper">
         <div class="partners__inner">
@@ -23,17 +41,19 @@
     <div class="partners__wrapper">
         <!-- Slider main container -->
         <div class="partners__swiper swiper">
-
             <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="partners__image-slide" src="https://picsum.photos/1920/1080"></div>
-                <div class="swiper-slide"><img class="partners__image-slide" src="<?php echo get_template_directory_uri(); ?>/assets/img/png/xtr.png" alt=""></div>
-                <div class="swiper-slide"><img class="partners__image-slide" src="<?php echo get_template_directory_uri(); ?>/assets/img/png/xtr.png" alt=""></div>
-                <div class="swiper-slide"><img class="partners__image-slide" src="<?php echo get_template_directory_uri(); ?>/assets/img/png/xtr.png" alt=""></div>
-                <div class="swiper-slide"><img class="partners__image-slide" src="<?php echo get_template_directory_uri(); ?>/assets/img/png/xtr.png" alt=""></div>
-                <div class="swiper-slide"><img class="partners__image-slide" src="<?php echo get_template_directory_uri(); ?>/assets/img/png/xtr.png" alt=""></div>
-                <div class="swiper-slide"><img class="partners__image-slide" src="<?php echo get_template_directory_uri(); ?>/assets/img/png/xtr.png" alt=""></div>
-                <div class="swiper-slide"><img class="partners__image-slide" src="<?php echo get_template_directory_uri(); ?>/assets/img/png/xtr.png" alt=""></div>
+                <?php if (!empty($partners_data['partners_sliders'])) {
+                    foreach ($partners_data['partners_sliders'] as $item) {    ?>
+
+
+                        <div class="swiper-slide">
+                            <img class="partners__image-slide"
+
+                                src="<?= esc_url(wp_get_attachment_image_url($item['partners_slider']['ID'], 'promo')); ?>"
+                                alt="<?= esc_attr($item['partners_slider']['alt']) ?>">
+                        </div>
+                    <?php } ?>
+                <?php } ?>
 
             </div>
 

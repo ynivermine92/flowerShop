@@ -1,52 +1,55 @@
+<?php
+$garden = get_fields($post_id);
+$garden_data = $garden['shop'];
+?>
+
+
 <section class="garden">
     <div class="wrapper">
         <div class="row">
             <div class="col-12">
-                <h2 class="garden__title title">Shop by Category</h2>
+                <h2 class="garden__title title"><?= esc_html($garden_data['hero_title']); ?></h2>
             </div>
             <div class="row  garden__items">
-                <div class="col-md-6 col-12 garden__item">
-                    <a class="garden__link" href="#">
-                        <img class="garden__image" src="https://picsum.photos/1920/1080" alt="" />
-                        <div class="garden__content">
-                            <span class="garden__text">Indoor Plants</span>
 
 
-                            <?php
-                            $arrow = get_template_directory() . '/assets/img/svg/arrow.svg';
+                <?php if (!empty($garden_data['shop_items'])) {
+                    foreach ($garden_data['shop_items'] as $item) {?>
+                        <div class="col-md-6 col-12 garden__item">
+                            <a class="garden__link" href="<?= esc_url($item['shop_link']['url']); ?>">
+                                <?php if (!empty($item['shop_image'])) { ?>
+                                    <img
+                                        src="<?= esc_url($item['shop_image']['url']); ?>"
+                                        alt="<?= esc_attr($item['shop_image']['alt']) ?>"
+                                        class="garden__image">
+                                <?php } ?>
+                                <div class="garden__content">
+                                    <span class="garden__text"><?= esc_html($item['shop_text']); ?></span>
 
-                            $svg = file_get_contents($arrow);
 
-                            $svg = str_replace('<svg', '<svg class=" icon-arrow"', $svg);
+                                    <?php
+                                    $arrow = get_template_directory() . '/assets/img/svg/arrow.svg';
 
-                            echo $svg;
-                            ?>
+                                    $svg = file_get_contents($arrow);
+
+                                    $svg = str_replace('<svg', '<svg class=" icon-arrow"', $svg);
+
+                                    echo $svg;
+                                    ?>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-12 garden__item">
-                    <a class="garden__link" href="#">
-                        <img class="garden__image" src="https://picsum.photos/1920/1080" alt="" />
-                        <div class="garden__content">
-                            <span class="garden__text">Indoor Plants</span>
 
-
-                            <?php
-                            $arrow = get_template_directory() . '/assets/img/svg/arrow.svg';
-
-                            $svg = file_get_contents($arrow);
-
-                            $svg = str_replace('<svg', '<svg class=" icon-arrow"', $svg);
-
-                            echo $svg;
-                            ?>
-                        </div>
-                    </a>
-                </div>
+                    <?php } ?>
+                <?php } ?>
 
 
 
-            </div> 
+
+
+
+
+            </div>
             <div class="support">
                 <div class="row support__items">
                     <div class="col-xxl-3 col-md-6 col-12">
